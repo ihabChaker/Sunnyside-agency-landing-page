@@ -1,0 +1,22 @@
+@mixin bg-image($img-file-name) {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./../../images/mobile/#{$img-file-name}");
+
+    @media screen and (min-width: $breakpoint-l) {
+        background-image: url("./../../images/desktop/#{$img-file-name}");
+    }
+}
+
+@mixin two-square-tiles {
+    display: grid;
+    @media screen and (min-width: $breakpoint-l) {
+        grid-template-columns: 1fr 1fr;
+        height: 50vw;
+
+        & > div {
+            height: 100%;
+        }
+    }
+}

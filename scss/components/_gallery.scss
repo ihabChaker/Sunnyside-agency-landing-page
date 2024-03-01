@@ -1,0 +1,27 @@
+.brand-gallery {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media screen and (min-width: $breakpoint-l) {
+        height: 80vh;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    & > div {
+        height: 100%;
+        @media screen and (min-width: $breakpoint-l) {
+            height: 50vw;
+        }
+    }
+}
+.bg-gallery-milk-bottles {
+    @include bg-image("image-gallery-milkbottles.jpg");
+}
+.bg-gallery-orange {
+    @include bg-image("image-gallery-orange.jpg");
+}
+.bg-gallery-cone {
+    @include bg-image("image-gallery-cone.jpg");
+}
+.bg-gallery-sugar-cubes {
+    @include bg-image("image-gallery-sugar-cubes.jpg");
+}

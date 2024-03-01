@@ -1,0 +1,50 @@
+.brand__content-container {
+    @include two-square-tiles;
+
+    & > .bg-lamp {
+        @include bg-image("image-stand-out.jpg");
+    }
+    & > .bg-egg {
+        @include bg-image("image-transform.jpg");
+    }
+}
+.brand__text-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem;
+    @media screen and (min-width: $breakpoint-xl) {
+        gap: 4rem;
+        padding-top: 15rem;
+        padding-inline: 15rem;
+    }
+}
+.brand__paragraph {
+    color: $dark-grayish-blue;
+}
+.brand__cta {
+    display: inline-block;
+    text-decoration: none;
+    color: $very-dark-desaturated-blue;
+    padding-inline: 10px;
+    position: relative;
+    z-index: 99;
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -99;
+        bottom: 0;
+        left: 0;
+        height: 9px;
+        border-radius: 5px;
+        display: block;
+        transform: translateY(-2px);
+        width: 100%;
+    }
+    &[data-underline-accent="yellow"]::after {
+        background: $yellow;
+    }
+    &[data-underline-accent="soft-red"]::after {
+        background: $soft-red;
+    }
+}

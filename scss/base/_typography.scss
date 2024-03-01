@@ -1,0 +1,70 @@
+html {
+    font-family: "Barlow", "sans-serif";
+    font-weight: 600;
+}
+h1,
+h2,
+h3,
+button,
+.brand__cta {
+    font-family: "Fraunces", "sans-serif";
+}
+h1,
+h2,
+h3,
+.brand__cta {
+    font-weight: 900;
+}
+a,
+button {
+    font-weight: 700;
+}
+
+.navigation__item {
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+}
+
+.header__heading {
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    letter-spacing: 0.6rem;
+    @media screen and (min-width: $breakpoint-l) {
+        font-size: 6.4rem;
+        letter-spacing: 1rem;
+    }
+}
+
+.brand__heading {
+    font-size: 5rem;
+    line-height: 1.2;
+}
+.brand__paragraph {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+}
+.brand__cta {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.service__heading {
+    font-size: 3rem;
+}
+.service__paragraph {
+    font-size: 1.6rem;
+}
+.testimonials__heading {
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    letter-spacing: 0.2em;
+}
+.testimonial__paragraph {
+    font-size: 1.6rem;
+}
+.author__name {
+    font-size: 1.8rem;
+}
+.author__job-title {
+    font-size: 1.2rem;
+}

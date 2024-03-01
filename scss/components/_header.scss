@@ -1,0 +1,28 @@
+.header {
+    height: 100dvh;
+    padding-inline: 2rem;
+    padding-block: 4rem;
+
+    @include bg-image("image-header.jpg");
+}
+
+.header-container {
+    max-width: 1300px;
+    margin-inline: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 4rem;
+    @media screen and (min-width: $breakpoint-l) {
+        margin-bottom: 12rem;
+    }
+}
+.header__logo-container {
+    max-width: 150px;
+}
+.header__heading {
+    text-align: center;
+    color: $white;
+}
