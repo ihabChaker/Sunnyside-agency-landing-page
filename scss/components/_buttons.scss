@@ -1,5 +1,10 @@
 .contact-btn {
-    background-color: $white;
+    background-color: $yellow;
+    color: $very-dark-desaturated-blue !important;
+    @media screen and (min-width: $breakpoint-l) {
+        background-color: $white;
+        color: inherit;
+    }
     border: none;
     border-radius: 100vw;
     padding: 10px 25px;
