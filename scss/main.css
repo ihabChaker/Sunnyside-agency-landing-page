@@ -175,11 +175,11 @@ button {
   background-position: center center; /* Center the image */
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("./../images/mobile/image-header.jpg");
+  background-image: url(/images/mobile/image-header.jpg);
 }
 @media screen and (min-width: 800px) {
   .header {
-    background-image: url("./../images/desktop/image-header.jpg");
+    background-image: url(/images/desktop/image-header.jpg);
   }
 }
 
@@ -341,22 +341,22 @@ button {
   background-position: center center; /* Center the image */
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("./../images/mobile/image-stand-out.jpg");
+  background-image: url(/images/mobile/image-stand-out.jpg);
 }
 @media screen and (min-width: 800px) {
   .brand__content-container > .bg-lamp {
-    background-image: url("./../images/desktop/image-stand-out.jpg");
+    background-image: url(/images/desktop/image-stand-out.jpg);
   }
 }
 .brand__content-container > .bg-egg {
   background-position: center center; /* Center the image */
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("./../images/mobile/image-transform.jpg");
+  background-image: url(/images/mobile/image-transform.jpg);
 }
 @media screen and (min-width: 800px) {
   .brand__content-container > .bg-egg {
-    background-image: url("./../images/desktop/image-transform.jpg");
+    background-image: url(/images/desktop/image-transform.jpg);
   }
 }
 .brand__content-container:first-child {
@@ -450,11 +450,11 @@ button {
   background-position: center center; /* Center the image */
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("./../images/mobile/image-gallery-milkbottles.jpg");
+  background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
 }
 @media screen and (min-width: 800px) {
   .bg-gallery-milk-bottles {
-    background-image: url("./../images/desktop/image-gallery-milkbottles.jpg");
+    background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
   }
 }
 
@@ -462,11 +462,11 @@ button {
   background-position: center center; /* Center the image */
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("./../images/mobile/image-gallery-orange.jpg");
+  background-image: url(/images/mobile/image-gallery-orange.jpg);
 }
 @media screen and (min-width: 800px) {
   .bg-gallery-orange {
-    background-image: url("./../images/desktop/image-gallery-orange.jpg");
+    background-image: url(/images/desktop/image-gallery-orange.jpg);
   }
 }
 
@@ -474,11 +474,11 @@ button {
   background-position: center center; /* Center the image */
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("./../images/mobile/image-gallery-cone.jpg");
+  background-image: url(/images/mobile/image-gallery-cone.jpg);
 }
 @media screen and (min-width: 800px) {
   .bg-gallery-cone {
-    background-image: url("./../images/desktop/image-gallery-cone.jpg");
+    background-image: url(/images/desktop/image-gallery-cone.jpg);
   }
 }
 
@@ -486,11 +486,11 @@ button {
   background-position: center center; /* Center the image */
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("./../images/mobile/image-gallery-sugar-cubes.jpg");
+  background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
 }
 @media screen and (min-width: 800px) {
   .bg-gallery-sugar-cubes {
-    background-image: url("./../images/desktop/image-gallery-sugar-cubes.jpg");
+    background-image: url(/images/desktop/image-gallery-sugar-cubes.jpg);
   }
 }
 
@@ -521,12 +521,12 @@ button {
   background-position: center center; /* Center the image */
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("./../images/mobile/image-graphic-design.jpg");
+  background-image: url(/images/mobile/image-graphic-design.jpg);
   color: hsl(167, 40%, 24%);
 }
 @media screen and (min-width: 800px) {
   .bg-cherry {
-    background-image: url("./../images/desktop/image-graphic-design.jpg");
+    background-image: url(/images/desktop/image-graphic-design.jpg);
   }
 }
 
@@ -534,12 +534,12 @@ button {
   background-position: center center; /* Center the image */
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("./../images/mobile/image-photography.jpg");
+  background-image: url(/images/mobile/image-photography.jpg);
   color: hsl(198, 62%, 26%);
 }
 @media screen and (min-width: 800px) {
   .bg-orange {
-    background-image: url("./../images/desktop/image-photography.jpg");
+    background-image: url(/images/desktop/image-photography.jpg);
   }
 }
 
