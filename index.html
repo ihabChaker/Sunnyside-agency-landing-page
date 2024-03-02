@@ -23,7 +23,7 @@
       <div class="header__logo-container">
         <img src="./images/logo.svg" alt="Sunnyside logo image">
       </div>
-      <nav class="navigation" id="header-navigation">
+      <nav class="navigation" id="header-navigation" aria-label="Header navigation menu">
         <div class="triangle"></div>
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -162,7 +162,7 @@
       </svg>
     </div>
     <div class="footer__navigation">
-      <nav class="navigation">
+      <nav class="navigation" aria-label="footer navigation menu">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a href="#about">About</a>
@@ -217,7 +217,7 @@
       </div>
     </div>
   </footer>
-  <script defer>
+  <script>
     const arrowBtn = document.getElementById('arrow-down-btn')
     arrowBtn.addEventListener('click', () => {
       window.scrollBy({
