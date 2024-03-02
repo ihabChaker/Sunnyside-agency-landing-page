@@ -2,10 +2,10 @@
     background-position: center center; /* Center the image */
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../../images/mobile/#{$img-file-name});
+    background-image: url(./../images/mobile/#{$img-file-name});
 
     @media screen and (min-width: $breakpoint-l) {
-        background-image: url(../../images/desktop/#{$img-file-name});
+        background-image: url(./../images/desktop/#{$img-file-name});
     }
 }
 
