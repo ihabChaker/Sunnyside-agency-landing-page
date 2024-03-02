@@ -18,6 +18,8 @@
     @media screen and (min-width: $breakpoint-l) {
         margin-bottom: 8rem;
     }
+
+    position: relative;
 }
 .header__logo-container {
     max-width: 150px;
@@ -30,4 +32,14 @@
 .header__arrow-down-container {
     max-width: 50px;
     margin-inline: auto;
+}
+.hamburger__container {
+    display: block;
+    @media screen and (min-width: $breakpoint-l) {
+        display: none;
+    }
+    width: 48px;
+    button {
+        width: 100%;
+    }
 }

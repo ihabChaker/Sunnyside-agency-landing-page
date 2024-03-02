@@ -190,6 +190,7 @@ button {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 4rem;
+  position: relative;
 }
 @media screen and (min-width: 800px) {
   .header-container {
@@ -212,27 +213,74 @@ button {
   margin-inline: auto;
 }
 
+.hamburger__container {
+  display: block;
+  width: 48px;
+}
+@media screen and (min-width: 800px) {
+  .hamburger__container {
+    display: none;
+  }
+}
+.hamburger__container button {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .navigation {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 250%;
+    width: 95%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 4rem;
+  }
+  .navigation.active {
+    display: block;
+  }
+  .navigation.active .triangle {
+    display: block;
+  }
+}
 .navigation__list {
+  padding: 0;
   list-style-type: none;
+  display: flex;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  display: none;
 }
 @media screen and (min-width: 800px) {
   .navigation__list {
-    display: flex;
     flex-direction: row;
     gap: 4rem;
   }
 }
-.navigation__list.active {
-  display: flex;
-}
 
 .navigation__item a {
   text-decoration: none;
-  color: hsl(0, 0%, 100%);
+  color: hsl(210, 4%, 67%);
+}
+@media screen and (min-width: 800px) {
+  .navigation__item a {
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+.triangle {
+  display: none;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 0 48px 48px;
+  border-color: transparent transparent white transparent;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-100%);
 }
 
 .contact-btn {
@@ -253,6 +301,11 @@ button {
 }
 .move-down-btn:hover {
   cursor: pointer;
+}
+
+.hamburger__button {
+  background-color: transparent;
+  border: 0;
 }
 
 .brand__content-container {

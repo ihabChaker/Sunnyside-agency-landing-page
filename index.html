@@ -23,7 +23,8 @@
       <div class="header__logo-container">
         <img src="./images/logo.svg" alt="Sunnyside logo image">
       </div>
-      <nav class="navigation">
+      <nav class="navigation" id="header-navigation">
+        <div class="triangle"></div>
         <ul class="navigation__list">
           <li class="navigation__item">
             <a href="#about">About</a>
@@ -39,6 +40,11 @@
           </li>
         </ul>
       </nav>
+      <div class="hamburger__container">
+        <button class="hamburger__button" title="Hamburger menu button" id="hamburger-btn" aria-expanded="false">
+          <img src="./images/icon-hamburger.svg" alt="">
+        </button>
+      </div>
     </div>
     <h1 class="header__heading">We are creatives</h1>
     <div class="header__arrow-down-container">
@@ -211,13 +217,26 @@
       </div>
     </div>
   </footer>
-  <script>
+  <script defer>
     const arrowBtn = document.getElementById('arrow-down-btn')
     arrowBtn.addEventListener('click', () => {
       window.scrollBy({
         top: window.innerHeight,
         behavior: 'auto'
       });
+    })
+
+    const hamburgerBtn = document.getElementById('hamburger-btn')
+    const headerNavigation = document.getElementById('header-navigation')
+    hamburgerBtn.addEventListener('click', () => {
+      const isMenuExpanded = this.ariaExpanded
+      if (isMenuExpanded == 'true') {
+        headerNavigation.classList.remove('active')
+        this.ariaExpanded = 'false'
+      } else {
+        headerNavigation.classList.add('active')
+        this.ariaExpanded = 'true'
+      }
     })
   </script>
 </body>
