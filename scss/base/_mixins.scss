@@ -1,5 +1,5 @@
 @mixin bg-image($img-file-name) {
-    background-position: center;
+    background-position: center center; /* Center the image */
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("./../../images/mobile/#{$img-file-name}");
@@ -12,7 +12,8 @@
 @mixin two-square-tiles {
     display: flex;
     flex-direction: column;
-    .brand__image-container {
+    .brand__image-container,
+    .service {
         height: 100vw;
     }
     @media screen and (min-width: $breakpoint-l) {
@@ -23,7 +24,8 @@
         & > div {
             height: 100%;
         }
-        .brand__image-container {
+        .brand__image-container,
+        .service {
             height: 100%;
         }
     }

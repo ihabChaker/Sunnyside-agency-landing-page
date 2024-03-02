@@ -12,5 +12,7 @@
 .move-down-btn {
     background-color: transparent;
     border: 0;
-    height: fit-content;
+    &:hover {
+        cursor: pointer;
+    }
 }

@@ -36,7 +36,16 @@ button {
 }
 
 .brand__heading {
-    font-size: 5rem;
+    font-size: 3.2rem;
+    @media screen and (min-width: $breakpoint-m) {
+        font-size: 4.5rem;
+    }
+    @media screen and (min-width: $breakpoint-l) {
+        font-size: 3.5rem;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+        font-size: 5rem;
+    }
     line-height: 1.2;
 }
 .brand__paragraph {
@@ -49,10 +58,16 @@ button {
     text-transform: uppercase;
 }
 .service__heading {
-    font-size: 3rem;
+    font-size: 4rem;
+    @media screen and (min-width: $breakpoint-l) {
+        font-size: 3rem;
+    }
 }
 .service__paragraph {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
+    @media screen and (min-width: $breakpoint-l) {
+        font-size: 1.6rem;
+    }
 }
 .testimonials__heading {
     text-transform: uppercase;

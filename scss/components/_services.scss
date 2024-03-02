@@ -24,5 +24,8 @@
     }
 }
 .service__paragraph {
-    max-width: 62%;
+    max-width: 90%;
+    @media screen and (min-width: $breakpoint-l) {
+        max-width: 62%;
+    }
 }
