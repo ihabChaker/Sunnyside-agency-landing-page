@@ -6,11 +6,11 @@
 @import "./base/sr-only";
 @import "./base/typography";
 
-@import "./components/buttons";
 @import "./components/header";
+@import "./components/navigation";
+@import "./components/buttons";
 @import "./components/brand";
-@import "./components/footer";
 @import "./components/gallery";
 @import "./components/services";
-@import "./components/navigation";
 @import "./components/testimonials";
+@import "./components/footer";

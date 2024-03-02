@@ -1,0 +1,28 @@
+.footer {
+    padding-block: 8rem;
+    @media screen and (min-width: $breakpoint-m) {
+        padding-block: 10rem;
+    }
+    background-color: $footer-bg-color;
+    .navigation__item a {
+        color: $dark-desaturated-cyan;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.footer__logo-container {
+    fill: $dark-desaturated-cyan;
+}
+.socials__container {
+    display: flex;
+    gap: 2.5rem;
+}
+.social-link__container svg {
+    fill: $dark-desaturated-cyan;
+    transition: 0.4s all;
+    &:hover {
+        fill: $white;
+    }
+}

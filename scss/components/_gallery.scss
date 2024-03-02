@@ -8,9 +8,6 @@
     }
     & > div {
         height: 100%;
-        @media screen and (min-width: $breakpoint-l) {
-            height: 50vw;
-        }
     }
 }
 .bg-gallery-milk-bottles {

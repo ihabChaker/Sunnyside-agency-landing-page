@@ -6,6 +6,7 @@
 }
 
 html {
+  scroll-behavior: smooth !important;
   font-size: 62.5%;
 }
 
@@ -142,13 +143,6 @@ button {
   font-size: 1.2rem;
 }
 
-.contact-btn {
-  background-color: hsl(0, 0%, 100%);
-  border: none;
-  border-radius: 100vw;
-  padding: 10px 25px;
-}
-
 .header {
   height: 100dvh;
   padding-inline: 2rem;
@@ -174,7 +168,7 @@ button {
 }
 @media screen and (min-width: 800px) {
   .header-container {
-    margin-bottom: 12rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -185,6 +179,48 @@ button {
 .header__heading {
   text-align: center;
   color: hsl(0, 0%, 100%);
+  margin-bottom: 5rem;
+}
+
+.header__arrow-down-container {
+  max-width: 50px;
+  margin-inline: auto;
+}
+
+.navigation__list {
+  list-style-type: none;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  .navigation__list {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+.navigation__list.active {
+  display: flex;
+}
+
+.navigation__item a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.contact-btn {
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 100vw;
+  padding: 10px 25px;
+}
+
+.move-down-btn {
+  background-color: transparent;
+  border: 0;
+  height: fit-content;
 }
 
 .brand__content-container {
@@ -280,11 +316,6 @@ button {
 }
 .brand-gallery > div {
   height: 100%;
-}
-@media screen and (min-width: 800px) {
-  .brand-gallery > div {
-    height: 50vw;
-  }
 }
 
 .bg-gallery-milk-bottles {
@@ -394,29 +425,6 @@ button {
   max-width: 62%;
 }
 
-.navigation__list {
-  list-style-type: none;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  display: none;
-}
-@media screen and (min-width: 800px) {
-  .navigation__list {
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-  }
-}
-.navigation__list.active {
-  display: flex;
-}
-
-.navigation__item a {
-  text-decoration: none;
-  color: hsl(0, 0%, 100%);
-}
-
 .testimonials {
   padding-inline: 1rem;
   padding-block: 2rem;
@@ -485,6 +493,40 @@ button {
 
 .author__job-title {
   color: hsl(210, 4%, 67%);
+}
+
+.footer {
+  padding-block: 8rem;
+  background-color: hsla(168, 38.38%, 40.51%, 0.61);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+@media screen and (min-width: 640px) {
+  .footer {
+    padding-block: 10rem;
+  }
+}
+.footer .navigation__item a {
+  color: hsl(167, 40%, 24%);
+}
+
+.footer__logo-container {
+  fill: hsl(167, 40%, 24%);
+}
+
+.socials__container {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.social-link__container svg {
+  fill: hsl(167, 40%, 24%);
+  transition: 0.4s all;
+}
+.social-link__container svg:hover {
+  fill: hsl(0, 0%, 100%);
 }
 
 /*# sourceMappingURL=main.css.map */
