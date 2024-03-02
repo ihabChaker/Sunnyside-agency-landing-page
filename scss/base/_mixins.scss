@@ -10,12 +10,20 @@
 }
 
 @mixin two-square-tiles {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    .brand__image-container {
+        height: 100vw;
+    }
     @media screen and (min-width: $breakpoint-l) {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         height: 50vw;
 
         & > div {
+            height: 100%;
+        }
+        .brand__image-container {
             height: 100%;
         }
     }

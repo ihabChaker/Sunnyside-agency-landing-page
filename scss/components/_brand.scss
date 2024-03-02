@@ -1,11 +1,13 @@
 .brand__content-container {
     @include two-square-tiles;
-
     & > .bg-lamp {
         @include bg-image("image-stand-out.jpg");
     }
     & > .bg-egg {
         @include bg-image("image-transform.jpg");
+    }
+    &:first-child {
+        flex-direction: column-reverse;
     }
 }
 .brand__text-content-container {

@@ -26,3 +26,7 @@
         fill: $white;
     }
 }
+.footer__navigation .navigation__item a:hover {
+    transition: 0.4s all;
+    color: $white;
+}

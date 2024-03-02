@@ -215,6 +215,11 @@ button {
   border: none;
   border-radius: 100vw;
   padding: 10px 25px;
+  transition: 0.4s all;
+}
+.contact-btn:hover {
+  background-color: hsl(200, 99%, 52%);
+  color: hsl(0, 0%, 100%);
 }
 
 .move-down-btn {
@@ -224,14 +229,22 @@ button {
 }
 
 .brand__content-container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+}
+.brand__content-container .brand__image-container {
+  height: 100vw;
 }
 @media screen and (min-width: 800px) {
   .brand__content-container {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     height: 50vw;
   }
   .brand__content-container > div {
+    height: 100%;
+  }
+  .brand__content-container .brand__image-container {
     height: 100%;
   }
 }
@@ -256,6 +269,9 @@ button {
   .brand__content-container > .bg-egg {
     background-image: url("./../../images/desktop/image-transform.jpg");
   }
+}
+.brand__content-container:first-child {
+  flex-direction: column-reverse;
 }
 
 .brand__text-content-container {
@@ -367,14 +383,22 @@ button {
 }
 
 .services {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+}
+.services .brand__image-container {
+  height: 100vw;
 }
 @media screen and (min-width: 800px) {
   .services {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     height: 50vw;
   }
   .services > div {
+    height: 100%;
+  }
+  .services .brand__image-container {
     height: 100%;
   }
 }
@@ -527,6 +551,11 @@ button {
 }
 .social-link__container svg:hover {
   fill: hsl(0, 0%, 100%);
+}
+
+.footer__navigation .navigation__item a:hover {
+  transition: 0.4s all;
+  color: hsl(0, 0%, 100%);
 }
 
 /*# sourceMappingURL=main.css.map */
